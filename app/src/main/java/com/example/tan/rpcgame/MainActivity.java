@@ -103,20 +103,24 @@ public class MainActivity extends AppCompatActivity {
         if(playerChoice > computerChoice || playerChoice == 1 && computerChoice == 3){
             playerScore += 1;
             winText.setText("PLAYER WINS this round!!!");
-
         }
         if(playerChoice == computerChoice){
-            winText.setText("That's a TIE!");
+            if(playerChoice != 0 && computerChoice !=0){
+                winText.setText("That's a TIE!");
+            }
         }
         if(computerChoice > playerChoice || computerChoice == 1 && playerChoice == 3){
             winText.setText("Computer won! GAME OVER!");
+            Intent gameOverIntent = new Intent(getApplicationContext(), GameOver.class);
+            gameOverIntent.putExtra("playerScore", String.valueOf(playerScore));
+            startActivity(gameOverIntent);
         }
-
         score.setText(String.valueOf(playerScore));
     }
 
     public void gameOver(View view) {
-        Intent gameOverIntent = new Intent(this, GameOver.class);
+        Intent gameOverIntent = new Intent(getApplicationContext(), GameOver.class);
+        gameOverIntent.putExtra("playerScore", String.valueOf(playerScore));
         startActivity(gameOverIntent);
     }
 }

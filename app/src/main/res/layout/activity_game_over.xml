@@ -32,13 +32,13 @@
             android:text="@string/score"
             android:textSize="25sp"
             android:layout_weight="0.1"
-            android:paddingLeft="100dp"
-            android:paddingStart="100dp"/>
+            android:paddingLeft="140dp"
+            android:paddingStart="140dp"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/scoreEdit"
+            android:id="@+id/scoreEdit1"
             android:text="@string/scoreEdit"
             android:layout_weight="3"
             android:textSize="25sp"/>
@@ -63,6 +63,7 @@
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:id="@+id/submitNameBtn"
+            android:onClick="submitName"
             android:text="@string/submit"/>
 
     </LinearLayout>
