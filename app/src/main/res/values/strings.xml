@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RPC Game</string>
+    <string name="loading">RPC studio</string>
+    <string name="loading2">Loading..</string>
+    <string name="rpc">Rock Paper Scissors</string>
+    <string name="computer">Computer</string>
+    <string name="player">Player</string>
+    <string name="rock">Rock</string>
+    <string name="paper">Paper</string>
+    <string name="scissors">Scissors</string>
+    <string name="start">Start</string>
+    <string name="end">End Game</string>
+    <string name="score">Score:</string>
+    <string name="scoreEdit" />
+    <string name="submit">Submit</string>
+    <string name="enterName">Enter name here!</string>
+    <string name="playAgain">Play Again</string>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/computer"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="30sp"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageDisplay" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/winText"
+        android:text="@string/scoreEdit"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/player"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="30sp"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:id="@+id/imageDisplayPlayer"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/rock"
+            android:id="@+id/rockBtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/paper"
+            android:id="@+id/paperBtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/scissors"
+            android:id="@+id/scissorsBtn"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="@string/start"
+        android:id="@+id/startBtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/notifications"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreEdit"
+            android:text="@string/scoreEdit"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="@string/end"
+            android:id="@+id/endBtn"
+            android:onClick="gameOver"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

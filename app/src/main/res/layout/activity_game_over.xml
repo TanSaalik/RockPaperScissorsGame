@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOver"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="50dp">
+
+       <ImageView
+           android:layout_width="0dp"
+           android:layout_height="350dp"
+           android:layout_gravity="center"
+           android:layout_weight="1"
+           android:background="@drawable/trophy"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:textSize="25sp"
+            android:layout_weight="0.1"
+            android:paddingLeft="100dp"
+            android:paddingStart="100dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreEdit"
+            android:text="@string/scoreEdit"
+            android:layout_weight="3"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingStart="40dp"
+        android:paddingLeft="40dp">
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/submitNameField"
+            android:hint="@string/enterName" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/submitNameBtn"
+            android:text="@string/submit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:paddingRight="50dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/playAgain"
+            android:text="@string/playAgain"
+            android:onClick="playAgain"
+            android:layout_weight="1" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
