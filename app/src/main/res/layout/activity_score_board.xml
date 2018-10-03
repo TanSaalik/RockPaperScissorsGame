@@ -16,12 +16,19 @@
         android:paddingTop="30dp"
         android:textSize="30sp"
         android:textStyle="bold"/>
-    <ListView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:padding="30dp"
-        android:id="@+id/scoreBoardList">
-    </ListView>
+        android:layout_height="400dp">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="30dp"
+            android:id="@+id/scoreBoardList">
+        </ListView>
+
+    </LinearLayout>
 
     <Button
         android:layout_width="match_parent"
