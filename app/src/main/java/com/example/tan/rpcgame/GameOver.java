@@ -13,6 +13,7 @@ public class GameOver extends AppCompatActivity {
 
     SharedPreferences.Editor editor;
     Bundle extras;
+    String playerScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,7 @@ public class GameOver extends AppCompatActivity {
         final TextView scoreEdit = findViewById(R.id.scoreEdit1);
         extras = getIntent().getExtras();
         if (extras != null) {
-            String playerScore = extras.getString("playerScore");
+            playerScore = extras.getString("playerScore");
             scoreEdit.setText(playerScore);
         }
     }
@@ -36,13 +37,13 @@ public class GameOver extends AppCompatActivity {
 
     public void submitName(View view) {
         EditText submitNameField = findViewById(R.id.submitNameField);
-        SharedPreferences username = getSharedPreferences("username", Context.MODE_PRIVATE);
+        SharedPreferences username = getSharedPreferences("userName", Context.MODE_PRIVATE);
         editor = username.edit();
         editor.putString("userName", submitNameField.getText().toString());
         editor.apply();
 
         Intent scoreBoardIntent = new Intent(this, ScoreBoard.class);
-        scoreBoardIntent.putExtra("playerScore", extras);
+        scoreBoardIntent.putExtra("playerScore", playerScore);
         startActivity(scoreBoardIntent);
     }
 }

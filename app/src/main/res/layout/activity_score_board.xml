@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/scoreBoard"
         android:textAlignment="center"
+        android:id="@+id/bestResults"
         android:paddingTop="30dp"
         android:textSize="30sp"
         android:textStyle="bold"/>
